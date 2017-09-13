@@ -9,6 +9,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="Style01.css" />
         <title>INGRESO EMPLEADO</title>
+        <style type="text/css">
+        
+        </style>
     </head>
     <body>
         <div class="form-style-5">
