@@ -18,7 +18,7 @@
 #tabs30 ul li{display:block;float:left;margin:0 1px;}
 #tabs30 ul li a{display:block;float:left;color:#3f647e;text-decoration:none;padding:0 0 0 20px;height:33px;}
 #tabs30 ul li a span{padding:12px 20px 0 0;height:21px;float:left;}
-#tabs30 ul li a:hover{color:#bdf6e9;background:transparent url(images/dolphin_bg-OVER.gif) repeat-x bottom left;}
+#tabs30 ul li a:hover{color:#fff;background:transparent url(images/dolphin_bg-OVER.gif) repeat-x bottom left;}
 #tabs30 ul li a:hover span{display:block;width:auto;cursor:pointer;}
 #tabs30 ul li a.current,#tabs30 ul li a.current:hover{color:#fff;background:#1D6893 url(images/dolphin_left-ON.gif) no-repeat top left;line-height:275%;}
 #tabs30 ul li a.current span{display:block;padding:0 20px 0 0;width:auto;background:#1D6893 url(images/dolphin_right-ON.gif) no-repeat top right;height:33px;}
