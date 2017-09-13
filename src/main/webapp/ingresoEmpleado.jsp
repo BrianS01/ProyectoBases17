@@ -1,7 +1,5 @@
 <%-- 
     Document   : ingresoEmpleado
-    Created on : 13/09/2017, 07:15:36 AM
-    Author     : BRIAN
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
