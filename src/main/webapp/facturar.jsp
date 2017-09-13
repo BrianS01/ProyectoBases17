@@ -2,17 +2,13 @@
     Document   : facturar
 --%>
 
-<%-- 
-    Document   : ingresoEmpleado
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="Style01.css" />
-        <title>INGRESO EMPLEADO</title>
+        <title>FACTURA</title>
         <style type="text/css">
             .form-style-5
             {
@@ -128,17 +124,19 @@
         <div class="form-style-5">
             <form>
                 <fieldset>
-                    <legend><span class="number">1</span> Información Nuevo Empleado</legend>
-                    <input type="text" name="field1" placeholder="Nombre *">
-                    <input type="email" name="field2" placeholder="Cedula *">
-                    <input type="email" name="field3" placeholder="Correo *">
-                    <label for="job">Contrato:</label>
-                    <select id="job" name="field4">
-                        <option value="administrativo">Administrativo</option>
-                        <option value="tecnico">Tecnico</option>
-                    </select>      
+                    <legend><span class="number">1</span> Factura</legend>
+                    <input type="text" name="field1" placeholder="Codigo Empleado *">
+                    <input type="text" name="field2" placeholder="Nombre Cliente *">
+                    <input type="text" name="field3" placeholder="Cedula Cliente *">
+                    <input type="email" name="field4" placeholder="Codigo Cliente *">
                 </fieldset>
-                <input type="submit" value="Apply" />
+                <fieldset>
+                    <legend><span class="number">2</span> Informacion Productos</legend>
+                    <input type="text" name="field1" placeholder="Codigo Producto *">
+                    <input type="text" name="field2" placeholder="Precio Producto *">
+                    <textarea name="field3" placeholder="Adicional"></textarea>
+                </fieldset>
+                <input type="submit" value="Generar Recibo" />
             </form>
         </div>
     </body>
