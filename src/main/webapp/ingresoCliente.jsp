@@ -27,12 +27,14 @@
     </head>
     <body>
         <h1>Empleado </h1>
-        <div id="tabs30">
-            <ul>
-                <li><a href="#" title="css website navigation menus"><span> Crear </span></a></li>
-                <li><a href="#" title="css website navigation menus"><span> Modificar </span></a></li>
-                <li><a href="#" title="css website navigation menus"><span> Borrar </span></a></li>
-            </ul>
-        </div>
+        <table border="1">
+            <div id="tabs30">
+                <ul>
+                    <li><a href="#" title="css website navigation menus"><span> Crear </span></a></li>
+                    <li><a href="#" title="css website navigation menus"><span> Modificar </span></a></li>
+                    <li><a href="#" title="css website navigation menus"><span> Borrar </span></a></li>
+                </ul>
+            </div>
+        </table>
     </body>
 </html>
