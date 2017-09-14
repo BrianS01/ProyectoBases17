@@ -26,14 +26,14 @@
 </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>VLC Ltda!</h1>
         <div id="tabs30">
   <ul>
-	<li><a href="#" title="css website navigation menus"><span>Home</span></a></li>
-	<li><a href="#" title="css website navigation menus" class="current"><span>About Us</span></a></li>
-	<li><a href="#" title="css website navigation menus"><span>Services</span></a></li>
-	<li><a href="#" title="css website navigation menus"><span>Our Work</span></a></li>
-	<li><a href="#" title="css website navigation menus"><span>Contact Us</span></a></li>
+	<li><a href="#" title="css website navigation menus"><span> INICIO </span></a></li>
+	
+	<li><a href="#" title="css website navigation menus"><span> CLIENTE </span></a></li>
+	<li><a href="#" title="css website navigation menus"><span> EMPLEADOS </span></a></li>
+	<li><a href="#" title="css website navigation menus"><span> FACTURA </span></a></li>
   </ul>
 </div>
     </body>
