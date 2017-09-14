@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="Style01.css" />
-        <title>VLC</title>
+        <title>VLC Ltda!</title>
         <style>
             /* ---------------------- Dolphin nav ---------------------- */
             #tabs30{position:relative;height:33px;font-size:12px;text-transform:uppercase;font-weight:bold;background:#fff url(images/dolphin_bg.gif) repeat-x bottom left;padding:0 0 0 20px;}
@@ -25,7 +25,7 @@
             /* ---------------------- END Dolphin nav ---------------------- #EAF3F8*/
         </style>
     </head>
-    <body background="image1.jpg">
+    <body>
         <h1>Empleado </h1>
         <table border="1">
             <div id="tabs30">

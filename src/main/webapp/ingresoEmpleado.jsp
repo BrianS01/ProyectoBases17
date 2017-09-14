@@ -8,7 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="Style01.css" />
-        <title>INGRESO EMPLEADO</title>
+        <title>VLC Ltda!</title>
         <style type="text/css">
             .form-style-5
             {
