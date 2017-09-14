@@ -126,18 +126,17 @@
         <div class="form-style-5">
             <form>
                 <fieldset>
-                    <legend><span class="number">1</span>Información Nuevo Empleado</legend>
+                    <legend><span class="number">1</span>Información Nuevo Cliente</legend>
                     <input type="text" name="field1" placeholder="Nombre *">
                     <input type="email" name="field2" placeholder="Cedula *">
                     <input type="email" name="field3" placeholder="Correo *">
-                    <label for="job">Contrato:</label>
-                    <select id="job" name="field4">
-                        <option value="administrativo">Administrativo</option>
-                        <option value="tecnico">Tecnico</option>
-                    </select>      
+                    <label for="job">Contrato:</label>   
                 </fieldset>
-                <input type="submit" value="Apply" />
+                <input type="submit" value="INGRESAR" />
             </form>
         </div>
+        <div style="position: absolute; bottom: 5px;">
+            Copyright © 2017 - VLC Ltda - Todos los derechos reservados.
+        </div>  
     </body>
 </html>

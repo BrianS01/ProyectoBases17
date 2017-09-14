@@ -134,8 +134,11 @@
                         <option value="tecnico">Tecnico</option>
                     </select>      
                 </fieldset>
-                <input type="submit" value="Apply" />
+                <input type="submit" value="INGRESAR" />
             </form>
         </div>
+        <div style="position: absolute; bottom: 5px;">
+            Copyright © 2017 - VLC Ltda - Todos los derechos reservados.
+        </div>  
     </body>
 </html>
