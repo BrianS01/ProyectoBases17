@@ -124,7 +124,7 @@
         <div class="form-style-5">
             <form>
                 <fieldset>
-                    <legend><span class="number">1</span> Información Nuevo Empleado</legend>
+                    <legend><span class="number">1</span>Información Nuevo Empleado</legend>
                     <input type="text" name="field1" placeholder="Nombre *">
                     <input type="email" name="field2" placeholder="Cedula *">
                     <input type="email" name="field3" placeholder="Correo *">
