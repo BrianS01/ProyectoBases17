@@ -26,7 +26,7 @@
 </style>
     </head>
     <body>
-        <h1>Cliente</h1>
+        <h1>Empleado </h1>
         <div id="tabs30">
   <ul>
 	<li><a href="#" title="css website navigation menus"><span> Crear </span></a></li>
