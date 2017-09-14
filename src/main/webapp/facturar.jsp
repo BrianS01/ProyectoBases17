@@ -126,9 +126,7 @@
                 <fieldset>
                     <legend><span class="number">1</span> Factura</legend>
                     <input type="text" name="field1" placeholder="Codigo Empleado *">
-                    <input type="text" name="field2" placeholder="Nombre Cliente *">
                     <input type="text" name="field3" placeholder="Cedula Cliente *">
-                    <input type="email" name="field4" placeholder="Codigo Cliente *">
                 </fieldset>
                 <fieldset>
                     <legend><span class="number">2</span> Informacion Productos</legend>
