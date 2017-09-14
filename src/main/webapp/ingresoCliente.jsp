@@ -25,7 +25,7 @@
             /* ---------------------- END Dolphin nav ---------------------- #EAF3F8*/
         </style>
     </head>
-    <body background="image1.jgp">
+    <body background="image1.jpg">
         <h1>Empleado </h1>
         <table border="1">
             <div id="tabs30">
