@@ -28,7 +28,6 @@
         </style>
     </head>
     <body>
-    <center>
         <h1>Empleados</h1>
         <div id="tabs30">
             <ul>
@@ -38,9 +37,8 @@
                 <li><a href="#" title="css website navigation menus"><span>Borrar</span></a></li>
             </ul>
         </div>
-    </center>
-    <div style="position: absolute; bottom: 5px;">
-        Copyright © 2017 - VLC Ltda - Todos los derechos reservados.
-    </div>      
+        <div style="position: absolute; bottom: 5px;">
+            Copyright © 2017 - VLC Ltda - Todos los derechos reservados.
+        </div>      
     </body>
 </html>

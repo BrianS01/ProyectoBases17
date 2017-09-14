@@ -28,9 +28,8 @@
         </style>
     </head>
     <body>
-    <center>
         <h1>Clientes</h1>
-        <div id="tabs30">
+        <div id="tabs30"> 
             <ul>
                 <li><a href="index.html" title="css website navigation menus" class="current"><span>INICIO</span></a></li>
                 <li><a href="ingresoCliente.jsp" title="css website navigation menus"><span>Crear</span></a></li>
@@ -38,9 +37,8 @@
                 <li><a href="#" title="css website navigation menus"><span>Borrar</span></a></li>
             </ul>
         </div>
-    </center>
-    <div style="position: absolute; bottom: 5px;">
-        Copyright © 2017 - VLC Ltda - Todos los derechos reservados.
-    </div>      
+        <div style="position: absolute; bottom: 5px;">
+            Copyright © 2017 - VLC Ltda - Todos los derechos reservados.
+        </div>      
     </body>
 </html>
