@@ -24,7 +24,7 @@
                     <input type="text" name="field2" placeholder="Precio Producto *">
                     <textarea name="field3" placeholder="Adicional"></textarea>
                 </fieldset>
-                <input type="submit" value="Generar Recibo" />
+                <input type="submit" value="Generar Recibo"/>
             </form>
         </div>
     </body>
