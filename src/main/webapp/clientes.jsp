@@ -29,7 +29,7 @@
             /* ---------------------- END Dolphin nav ---------------------- #EAF3F8*/
         </style>
     </head>
-    <body>
+    <body background="wall.jpg">
         <h1>Clientes</h1>
         <div id="tabs30"> 
             <ul>
