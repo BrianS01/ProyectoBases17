@@ -14,6 +14,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="Style01.css" />
+        <link rel="shortcut icon" href="ui/imagenes/logo.ico">
         <title>VLC Ltda!</title>
     </head>
     <body>
