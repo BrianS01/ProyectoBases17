@@ -66,11 +66,13 @@ input[type="time"]:focus, input[type="url"]:focus, textarea:focus, select:focus
 {
     background: #d2d9dd;
 }
-.form-style-5 select
+
+select
 {
     -webkit-appearance: menulist-button;
     height:35px;
 }
+
 .form-style-5 .number
 {
     background: #1abc9c;
