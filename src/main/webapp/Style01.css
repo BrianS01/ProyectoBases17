@@ -88,8 +88,7 @@ select
     border-radius: 15px 15px 15px 0px;
 }
 
-.form-style-5 input[type="submit"],
-.form-style-5 input[type="button"]
+input[type="submit"], input[type="button"]
 {
     position: relative;
     display: block;
