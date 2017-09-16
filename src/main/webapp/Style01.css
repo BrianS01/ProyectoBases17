@@ -17,6 +17,7 @@ form-style-5
     padding: 20px;
     background-image: url("ima.gif");
     border-radius: 8px;
+    text-align: center;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
