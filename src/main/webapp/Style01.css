@@ -62,8 +62,7 @@ input[type="time"], input[type="url"], textarea, select
 
 input[type="text"]:focus, input[type="date"]:focus, input[type="datetime"]:focus,
 input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus,
-input[type="time"]:focus, input[type="url"]:focus, textarea:focus,
-.form-style-5 select:focus
+input[type="time"]:focus, input[type="url"]:focus, textarea:focus, select:focus
 {
     background: #d2d9dd;
 }
