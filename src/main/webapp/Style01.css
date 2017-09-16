@@ -60,8 +60,7 @@ input[type="time"], input[type="url"], textarea, select
     margin-bottom: 30px;
 }
 
-input[type="text"]:focus,
-.form-style-5 input[type="date"]:focus,
+input[type="text"]:focus, input[type="date"]:focus,
 .form-style-5 input[type="datetime"]:focus,
 .form-style-5 input[type="email"]:focus,
 .form-style-5 input[type="number"]:focus,
