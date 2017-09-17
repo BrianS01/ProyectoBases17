@@ -25,7 +25,6 @@
                     <input type="text" name="field1" placeholder="Nombre *">
                     <input type="email" name="field2" placeholder="Cedula *">
                     <input type="email" name="field3" placeholder="Correo *">
-                    <label for="job">Contrato:</label>   
                 </fieldset>
                 <input type="submit" value="INGRESAR" />
             </form>
