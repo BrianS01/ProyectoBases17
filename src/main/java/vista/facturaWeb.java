@@ -71,8 +71,8 @@ public class facturaWeb
         this.fecha = fecha;
     }
 }
-1
-2
+
+
 3
 4
 5
