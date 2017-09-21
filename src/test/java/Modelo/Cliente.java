@@ -1,29 +1,42 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *  PROYECTO PRIMER CORTE
+ *   co-Author :::   Juan Albarracin
+ *   co-Author :::  Mario Bolaños
+ *   co-Author ::: Sergio Orozco
+ *   co-Author :::  Brian Sterling
+ *     Program ::: Bases de Datos
+ *  Credential ::: SIST0008-G01:SIV
  */
+
 package Modelo;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
-/**
- *
- * @author Mario-Bx
- */
-public class Cliente {
+public class Cliente 
+{
     int tamañoRg;
     boolean elExi = true;
     RandomAccessFile archivo;
     
-    public void crearArchio() throws FileNotFoundException {
+    public void crearArchio() throws FileNotFoundException 
+    {
         this.archivo = new RandomAccessFile("Clientes.txt", "rw");
+        File file = new File("Clientes.txt");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Aca ESTA ##$$%%&&"+file.getAbsolutePath()+"%%&&$$$");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
     }
     
-    public void existe(int codigo) throws IOException {
+    public void existe(int codigo) throws IOException 
+    {
         archivo.seek(codigo * 105);
         archivo.skipBytes(96);
         char estado = archivo.readChar();
@@ -36,8 +49,10 @@ public class Cliente {
         }
     }
     
-    public void crearCliente(String nombre, String direcion, String telefono, int nievel, String ultimaCompra, int valor) throws IOException {
-        if (archivo.length() == 0) {
+    public void crearCliente(String nombre, String direcion, String telefono, int nievel, String ultimaCompra, int valor) throws IOException
+    {
+        if (archivo.length() == 0)
+        {
             System.out.println("Tamano actual: " + 1);
             archivo.writeInt(1);
             archivo.writeUTF("\r\n");
@@ -63,7 +78,9 @@ public class Cliente {
             archivo.writeChar('A');//2
             archivo.writeUTF("\r\n");//4
 
-        } else {
+        } 
+        else
+        {
             archivo.seek(0);
             tamañoRg = (archivo.readInt() + 1);
             archivo.seek(0);
@@ -92,7 +109,8 @@ public class Cliente {
         }
     }
     
-    public String leerCleinte(int codigo) throws IOException {
+    public String leerCliente(int codigo) throws IOException
+    {
         existe(codigo);
         int ID = 666;
         String Nom = "Error";
@@ -103,7 +121,8 @@ public class Cliente {
         int VL = 666;
         char Eac = 'G';
         
-        if (elExi == true) {
+        if (elExi == true)
+        {
             archivo.seek((codigo * 105));
             ID = archivo.readInt();
             Nom = archivo.readUTF();
@@ -125,40 +144,49 @@ public class Cliente {
         return ID + " " + Nom + " " + Dr + " " + Tel + " " + NL + " " + Uc + " " +VL;
     }
     
-    public void actualizarCliente (int codigo, String Campo, String newDato) throws IOException {
+    public void actualizarCliente (int codigo, String Campo, String newDato) throws IOException
+    {
         existe(codigo);
-        if (elExi == true) {
+        if (elExi == true)
+        {
             archivo.seek(codigo * 105);
 
-            if ("Nombre".equals(Campo)) {
+            if ("Nombre".equals(Campo))
+            {
                 archivo.skipBytes(4);
                 archivo.writeUTF(newDato);
             }
-            if ("Direccion".equals(Campo)) {
+            if ("Direccion".equals(Campo))
+            {
                 archivo.skipBytes(34);
                 archivo.writeUTF(newDato);
             }
-            if ("Telefono".equals(Campo)) {
+            if ("Telefono".equals(Campo))
+            {
                 archivo.skipBytes(64);
                 archivo.writeUTF(newDato);
             }
-            if ("Nivel".equals(Campo)) {
+            if ("Nivel".equals(Campo))
+            {
                 archivo.skipBytes(76);
                 archivo.writeInt(Integer.parseInt(newDato));
             }
-            if ("UltimaC".equals(Campo)) {
+            if ("UltimaC".equals(Campo))
+            {
                 archivo.skipBytes(80);
                 archivo.writeUTF(newDato);
             }
             
-            if ("Valor".equals(Campo)) {
+            if ("Valor".equals(Campo))
+            {
                 archivo.skipBytes(92);
                 archivo.writeInt(Integer.parseInt(newDato));
             }
         }
     }
     
-    public void borrarCliente(int codigo) throws IOException {
+    public void borrarCliente(int codigo) throws IOException
+    {
         existe(codigo);
         if (elExi == true) {
             archivo.seek(archivo.getFilePointer() - 2);
@@ -167,19 +195,40 @@ public class Cliente {
         }
     }
     
-    public ArrayList<String> listarCliente() throws IOException {
+    public ArrayList<String> listarCliente() throws IOException
+    {
         ArrayList resultado = new ArrayList();
         archivo.seek(0);
         tamañoRg = (archivo.readInt() + 1);
 
-        for (int i = 0; i < tamañoRg; i++) {
+        for (int i = 0; i < tamañoRg; i++) 
+        {
             existe(i);
             if (elExi == true) {
-                resultado.add(leerCleinte(i));
+                resultado.add(leerCliente(i));
             }
         }
-
         return resultado;
     }
     
+    
+    public String leerNivel(int codigo) throws IOException
+    {
+        existe(codigo);
+        int ID = 666;
+        String Nom = "Error";
+        String Dr = "Error";
+        String Tel = "Error";
+        int NL = 666;
+        String Uc = "Error";
+        int VL = 666;
+        char Eac = 'G';
+        
+        if (elExi == true)
+        {
+            archivo.seek((codigo * 105) + 76);
+            NL = archivo.readInt();  
+        }
+        return " Nivel = " + NL;
+    }
 }
