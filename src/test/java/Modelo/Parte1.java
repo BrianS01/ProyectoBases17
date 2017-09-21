@@ -12,20 +12,17 @@ package Modelo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.RandomAccessFile;
+//import java.io.RandomAccessFile;
 
-/**
- *
- * @author Mario-Bx
- */
-public class Parte1 {
-
+public class Parte1
+{
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws FileNotFoundException, IOException
+    {
         // TODO code application logic here
-      
+
 //        //pruebas de cliente
 //        Cliente Cli = new Cliente();
 //        Cli.crearArchio();
@@ -36,9 +33,6 @@ public class Parte1 {
 //        System.out.println(Cli.leerCleinte(2));
 //        Cli.borrarCliente(2);
 //        Cli.existe(2);
-        
-        
-        
 //        //Prueba vendeodor
 //        Verdedor Ven = new Verdedor();
 //        Ven.crearArchivo();
@@ -49,10 +43,6 @@ public class Parte1 {
 //        System.out.println(Ven.leerVendedor(2));
 //        Ven.borrarVendedor(2);
 //        Ven.existe(2);
-        
-        
-        
-        
 //        //prueba Pedido
 //        Pedido Ped = new Pedido();
 //        Ped.crearArchivo();
@@ -63,9 +53,6 @@ public class Parte1 {
 //        System.out.println(Ped.leerPedido(1));
 //        Ped.borrarPedido(1);
 //        Ped.existe(1);
-        
-        
-        
 //        Producto Pro = new Producto();
 //        Pro.crearArchivo();
 //        Pro.crearProducto(4.6, 2.8, 0.5, "larga duracion", "Blindado");
@@ -75,8 +62,6 @@ public class Parte1 {
 //        System.out.println(Pro.leerProducto(2));
 //        Pro.borrarProducto(2);
 //        Pro.existe(2);
-        
-        
 //        Factura Fac = new Factura();
 //        Fac.crearArchivo();
 //        Fac.crearFactura("12/09/2017", 5678987, 1, 2, 1);
@@ -86,8 +71,5 @@ public class Parte1 {
 //        System.out.println(Fac.leerDactura(2));
 //        Fac.borrarFactura(2);
 //        Fac.existe(2);
-        
-        
     }
-    
 }
