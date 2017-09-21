@@ -31,6 +31,7 @@ public class Pedido
         archivo.seek(codigo * 85);
         archivo.skipBytes(76);
         char estado = archivo.readChar();
+        
         if ('A' == estado)
         {
             this.elExi = true;
@@ -50,19 +51,16 @@ public class Pedido
             System.out.println("Tamano actual: " + 1);
             archivo.writeInt(1);
             archivo.writeUTF("\r\n");
-
             ////movemos el puntero a la posicion 85, tamaño de cada registro
             archivo.seek(85);
             //// pk de Pedido
             archivo.writeInt(1);//4
             archivo.writeUTF(medioP);//20
-
             archivo.seek(109);
             archivo.writeDouble(ancho);//8
             archivo.writeDouble(alto);//8
             archivo.writeDouble(espesor);//8
             archivo.writeUTF(Tipo);//20
-
             archivo.seek(153);
             archivo.writeInt(cantidad);//4
             archivo.writeInt(idCliente);//4            
@@ -131,6 +129,7 @@ public class Pedido
     public void actualizarPedido(int codigo, String Campo, String newDato) throws IOException
     {
         existe(codigo);
+        
         if (elExi == true)
         {
             archivo.seek(codigo * 85);
@@ -140,25 +139,25 @@ public class Pedido
                 archivo.skipBytes(4);
                 archivo.writeUTF(newDato);
             }
-            
+
             if ("Ancho".equals(Campo))
             {
                 archivo.skipBytes(24);
                 archivo.writeDouble(Double.parseDouble(newDato));
             }
-            
+
             if ("Alto".equals(Campo))
             {
                 archivo.skipBytes(32);
                 archivo.writeDouble(Double.parseDouble(newDato));
             }
-            
+
             if ("Espesor".equals(Campo))
             {
                 archivo.skipBytes(40);
                 archivo.writeDouble(Double.parseDouble(newDato));
             }
-            
+
             if ("Tipo".equals(Campo))
             {
                 archivo.skipBytes(48);
@@ -170,7 +169,7 @@ public class Pedido
                 archivo.skipBytes(68);
                 archivo.writeInt(Integer.parseInt(newDato));
             }
-            
+
             if ("Cliente".equals(Campo))
             {
                 archivo.skipBytes(72);
@@ -182,6 +181,7 @@ public class Pedido
     public void borrarPedido(int codigo) throws IOException
     {
         existe(codigo);
+        
         if (elExi == true)
         {
             archivo.seek(archivo.getFilePointer() - 2);
@@ -190,7 +190,7 @@ public class Pedido
         }
     }
 
-    public ArrayList<String> listar() throws IOException 
+    public ArrayList<String> listar() throws IOException
     {
         ArrayList resultado = new ArrayList();
         archivo.seek(0);
@@ -199,7 +199,9 @@ public class Pedido
         for (int i = 0; i < tamañoRg; i++)
         {
             existe(i);
-            if (elExi == true) {
+            
+            if (elExi == true)
+            {
                 resultado.add(leerPedido(i));
             }
         }
