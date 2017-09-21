@@ -16,31 +16,38 @@ import java.util.ArrayList;
 
 public class Vendedor
 {
-
     int tamañoRg;
     boolean elExi = true;
     RandomAccessFile archivo;
 
-    public void crearArchivo() throws FileNotFoundException {
+    public void crearArchivo() throws FileNotFoundException
+    {
         this.archivo = new RandomAccessFile("Vendedor.txt", "rw");
     }
 
-    public void existe(int codigo) throws IOException {
+    public void existe(int codigo) throws IOException
+    {
         archivo.seek(codigo * 95);
         archivo.skipBytes(88);
         char estado = archivo.readChar();
-        if ('A' == estado) {
+        
+        if ('A' == estado)
+        {
             this.elExi = true;
             System.out.println("Elemento si existe");
 
-        } else {
+        }
+        else
+        {
             this.elExi = false;
             System.out.println("Elemento no existe");
         }
     }
 
-    public void crearVendedor(String cC, String nombre, String direccion, String telefono) throws IOException {
-        if (archivo.length() == 0) {
+    public void crearVendedor(String cC, String nombre, String direccion, String telefono) throws IOException
+    {
+        if (archivo.length() == 0)
+        {
             System.out.println("Tamano actual: " + 1);
             archivo.writeInt(1);
             archivo.writeUTF("\r\n");
@@ -62,7 +69,9 @@ public class Vendedor
             archivo.writeChar('A');
             archivo.writeUTF("\r\n");
 
-        } else {
+        }
+        else
+        {
             archivo.seek(0);
             tamañoRg = (archivo.readInt() + 1);
             archivo.seek(0);
@@ -86,12 +95,11 @@ public class Vendedor
             archivo.seek((tamañoRg * 95) + 88);
             archivo.writeChar('A');
             archivo.writeUTF("\r\n");
-
         }
-
     }
 
-    public String leerVendedor(int codigo) throws IOException {
+    public String leerVendedor(int codigo) throws IOException
+    {
         existe(codigo);
         int ID = 666;
         String CC = "Error";
@@ -101,7 +109,8 @@ public class Vendedor
         int VL = 666;
         char Eac = 'G';
 
-        if (elExi == true) {
+        if (elExi == true)
+        {
             archivo.seek((codigo * 95));
             ID = archivo.readInt();
             CC = archivo.readUTF();
@@ -121,51 +130,66 @@ public class Vendedor
         return ID + " " + CC + " " + Nom + " " + Dr + " " + Tel;
     }
 
-    public void actualizarVendedodr(int codigo, String Campo, String newDato) throws IOException {
+    public void actualizarVendedodr(int codigo, String Campo, String newDato) throws IOException
+    {
         existe(codigo);
-        if (elExi == true) {
+        if (elExi == true)
+        {
             archivo.seek(codigo * 95);
 
-            if ("Cedula".equals(Campo)) {
+            if ("Cedula".equals(Campo))
+            {
                 archivo.skipBytes(4);
                 archivo.writeUTF(newDato);
             }
-            if ("Nombre".equals(Campo)) {
+            
+            if ("Nombre".equals(Campo))
+            {
                 archivo.skipBytes(16);
                 archivo.writeUTF(newDato);
             }
-            if ("Direccion".equals(Campo)) {
+            
+            if ("Direccion".equals(Campo))
+            {
                 archivo.skipBytes(46);
                 archivo.writeUTF(newDato);
             }
-            if ("Telefono".equals(Campo)) {
+            
+            if ("Telefono".equals(Campo))
+            {
                 archivo.skipBytes(76);
                 archivo.writeUTF(newDato);
             }
         }
     }
 
-    public void borrarVendedor(int codigo) throws IOException {
+    public void borrarVendedor(int codigo) throws IOException
+    {
         existe(codigo);
-        if (elExi == true) {
+        
+        if (elExi == true)
+        {
             archivo.seek(archivo.getFilePointer() - 2);
             archivo.writeChar('B');
             System.out.println("Elemento Eliminado");
         }
     }
 
-    public ArrayList<String> listar() throws IOException {
+    public ArrayList<String> listar() throws IOException
+    {
         ArrayList resultado = new ArrayList();
         archivo.seek(0);
         tamañoRg = (archivo.readInt() + 1);
 
-        for (int i = 0; i < tamañoRg; i++) {
+        for (int i = 0; i < tamañoRg; i++)
+        {
             existe(i);
-            if (elExi == true) {
+            
+            if (elExi == true)
+            {
                 resultado.add(leerVendedor(i));
             }
         }
-
         return resultado;
     }
 }
