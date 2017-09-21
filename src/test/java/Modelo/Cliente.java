@@ -210,25 +210,4 @@ public class Cliente
         }
         return resultado;
     }
-    
-    
-    public String leerNivel(int codigo) throws IOException
-    {
-        existe(codigo);
-        int ID = 666;
-        String Nom = "Error";
-        String Dr = "Error";
-        String Tel = "Error";
-        int NL = 666;
-        String Uc = "Error";
-        int VL = 666;
-        char Eac = 'G';
-        
-        if (elExi == true)
-        {
-            archivo.seek((codigo * 105) + 76);
-            NL = archivo.readInt();  
-        }
-        return " Nivel = " + NL;
-    }
 }
