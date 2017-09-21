@@ -7,7 +7,6 @@
  *     Program ::: Bases de Datos
  *  Credential ::: SIST0008-G01:SIV
  */
-
 package Modelo;
 
 import java.io.FileNotFoundException;
@@ -15,11 +14,8 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
-/**
- *
- * @author Mario-Bx
- */
-public class Verdedor {
+public class Vendedor
+{
 
     int tamañoRg;
     boolean elExi = true;
@@ -172,5 +168,4 @@ public class Verdedor {
 
         return resultado;
     }
-
 }
