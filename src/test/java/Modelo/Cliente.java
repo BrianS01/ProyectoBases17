@@ -40,7 +40,9 @@ public class Cliente
         archivo.seek(codigo * 105);
         archivo.skipBytes(96);
         char estado = archivo.readChar();
-        if ('A' == estado) {
+        
+        if ('A' == estado)
+        {
             this.elExi = true;
             System.out.println("Elemento si existe");
         } else {
@@ -156,21 +158,25 @@ public class Cliente
                 archivo.skipBytes(4);
                 archivo.writeUTF(newDato);
             }
+            
             if ("Direccion".equals(Campo))
             {
                 archivo.skipBytes(34);
                 archivo.writeUTF(newDato);
             }
+            
             if ("Telefono".equals(Campo))
             {
                 archivo.skipBytes(64);
                 archivo.writeUTF(newDato);
             }
+            
             if ("Nivel".equals(Campo))
             {
                 archivo.skipBytes(76);
                 archivo.writeInt(Integer.parseInt(newDato));
             }
+            
             if ("UltimaC".equals(Campo))
             {
                 archivo.skipBytes(80);
@@ -188,7 +194,8 @@ public class Cliente
     public void borrarCliente(int codigo) throws IOException
     {
         existe(codigo);
-        if (elExi == true) {
+        if (elExi == true)
+        {
             archivo.seek(archivo.getFilePointer() - 2);
             archivo.writeChar('B');
             System.out.println("Elemento Eliminado");
@@ -204,7 +211,8 @@ public class Cliente
         for (int i = 0; i < tamañoRg; i++) 
         {
             existe(i);
-            if (elExi == true) {
+            if (elExi == true)
+            {
                 resultado.add(leerCliente(i));
             }
         }
