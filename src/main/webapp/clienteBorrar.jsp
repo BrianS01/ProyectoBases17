@@ -47,7 +47,7 @@
                             <li><a href="index.jsp">FACTURA</a></li>
                         </ul>
                     </li>
-                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon5.png"/></span>Acerca De</a>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon5.png"/></span>Sustentación</a>
                         <ul>
                             <li><a href="index.jsp">ACERCA DE</a></li>
                         </ul>
