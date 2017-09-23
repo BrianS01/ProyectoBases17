@@ -57,8 +57,9 @@ public class ClienteCont extends HttpServlet
             RequestDispatcher aREspuesta = request.getRequestDispatcher("Cliente.jsp");
             request.setAttribute("ListaClientes", ListaCL);
             aREspuesta.forward(request, response);
-            
-        }else {
+        }
+        else
+        {
             //Mandar Mensaje de Error
             response.sendRedirect("hola.jsp");
         }
