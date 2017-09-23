@@ -89,7 +89,7 @@
                 <font size="3" color="white">
                     <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
                 </font>
-            </footer> 
+            </footer>
         </form>
     </body>
 </html>
