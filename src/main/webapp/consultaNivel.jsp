@@ -1,9 +1,12 @@
-<%-- 
-    Document   : consultaNivel
-    Created on : 22/09/2017, 10:11:29 PM
-    Author     : BRIAN
---%>
-
+<!-- 
+ *  PROYECTO PRIMER CORTE
+ *   co-Author :::   Juan Albarracin
+ *   co-Author :::  Mario Bolaños
+ *   co-Author ::: Sergio Orozco
+ *   co-Author :::  Brian Sterling
+ *     Program ::: Bases de Datos
+ *  Credential ::: SIST0008-G01:SIV
+-->
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
