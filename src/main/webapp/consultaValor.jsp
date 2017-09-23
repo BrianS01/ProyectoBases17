@@ -14,6 +14,48 @@
         <title>VLC Ltda!</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="MenuDes">
+            <nav>
+                <ul>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon1.png" /></span>Inicio</a>
+                        <ul>
+                            <li><a href="index.jsp">INICIO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon2.png"/></span>Cliente</a>
+                        <ul>
+                            <li><a href="Cliente.jsp">Crear</a></li>
+                            <li><a href="clienteActua.jsp">Actualizar</a></li>
+                            <li><a href="clienteConsulta.jsp">Consultar</a></li>
+                            <li><a href="clienteBorrar.jsp">Borrar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon3.png"/></span>Empleado</a>
+                        <ul>
+                            <li><a href="">Crear</a></li>
+                            <li><a href="">Actualizar</a></li>
+                            <li><a href="">Consultar</a></li>
+                            <li><a href="">Borrar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon4.png"/></span>Factura</a>
+                        <ul>
+                            <li><a href="index.jsp">FACTURA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon5.png"/></span>Sustentación</a>
+                        <ul>
+                            <li><a href="consultaValor.jsp">Sergio Orozco</a></li>
+                            <li><a href="consultaNivel.jsp">Particular</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon6.png"/></span>Contacto</a>
+                        <ul>
+                            <li><a href="index.jsp">CONTACTO</a></li>
+                        </ul>
+                    </li>
+                </ul>				
+            </nav>
+        </div>
     </body>
 </html>
