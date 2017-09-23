@@ -1,0 +1,85 @@
+/*Fondo Del Navegador*/
+body {
+    font-family: verdana;
+    background-image: url("../imagenes/fondoVD.jpg");
+    width: 99%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/**Temas**/
+#Temas{	
+    margin:10%;
+    box-shadow: 2px 2px 50px #00FFFF;
+}
+
+div.Tema{
+    width: 25%;
+    float: left;
+    height: 170px;	
+    transition: height .9s;
+    box-shadow: 2px 2px 50px #00FFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+img.Estilos{
+    width: 80%;
+    height: 100px;
+    opacity: .6;
+    margin-top: 20px;
+    border-radius: 100%;
+    transition: box-shadow .9s;	
+    box-shadow: 0px 0px 0px 45px rgba(225,225,225,0);
+    transition: height .9s;
+}
+p.Estilos{
+    color: rgba(25, 255, 244, 0.9);
+    margin:10px;
+    font-size: 20px;
+
+}
+
+p.Info {
+    font-size: 15px;
+    ont-size: 20PX;
+    margin: 20px;
+    color: #00FFFF;
+    padding: 15px;
+    border-radius: 10%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.Tema:hover {
+    height: 400px;
+}
+
+div.Tema:hover img.Estilos {
+    height: 150px;
+    box-shadow: 0px 0px 0px 0px rgba(225,225,225,.6);
+    opacity: 1;
+}
+
+#Tema1{
+    background-image: url("../images/Fondo-Agua2.jpg");
+    background-size: 100% 100%;
+}
+#Tema2{
+    background-image: url("../images/Fondo-Agua6.jpg");
+    background-size: 100% 100%;
+}
+#Tema3{
+    background-image: url("../images/Fondo-Agua1.jpg");
+    background-size: 100% 100%;
+}
+#Tema4{
+    background-image: url("../images/Fondo-Agua5.jpg");
+    background-size: 100% 100%;
+}
