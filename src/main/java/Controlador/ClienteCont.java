@@ -1,26 +1,27 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *  PROYECTO PRIMER CORTE
+ *   co-Author :::   Juan Albarracin
+ *   co-Author :::  Mario Bolaños
+ *   co-Author ::: Sergio Orozco
+ *   co-Author :::  Brian Sterling
+ *     Program ::: Bases de Datos
+ *  Credential ::: SIST0008-G01:SIV
  */
+
 package Controlador;
 
+import Modelo.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Modelo.Cliente;
 import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
 
-/**
- *
- * @author Mario-Bx
- */
-public class ClienteCont extends HttpServlet {
-
+public class ClienteCont extends HttpServlet 
+{
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -31,8 +32,8 @@ public class ClienteCont extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        
+            throws ServletException, IOException
+    {
         ///Cereamos variables Para los Textos
         String NombreCont = request.getParameter("Nombre");
         String DireccionCont = request.getParameter("Direccion");
@@ -42,8 +43,8 @@ public class ClienteCont extends HttpServlet {
         String ValorCont = request.getParameter("Valor");
 
         if (NombreCont.trim().length() > 0 && DireccionCont.trim().length() > 0 && TelefonoCont.trim().length() > 0 && UCompraCont.trim().length() > 0
-                && NivelCont.trim().length() > 0 && ValorCont.trim().length() > 0) {
-
+                && NivelCont.trim().length() > 0 && ValorCont.trim().length() > 0)
+        {
             //se crea un objero de la clase (Metodos),  no olvidar importar antes 
             Cliente Cl = new Cliente();
             // se crea el archivo
