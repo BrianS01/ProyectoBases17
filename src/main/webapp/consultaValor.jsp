@@ -9,7 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="shortcut icon" href="ui/imagenes/logo.ico">
+        <link rel="stylesheet" href="ui/css/Desplegable.css">
+        <title>VLC Ltda!</title>
     </head>
     <body>
         <h1>Hello World!</h1>
