@@ -54,7 +54,7 @@
                     </li>
                     <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon6.png"/></span>Contacto</a>
                         <ul>
-                            <li><a href="index.jsp">CONTACTO</a></li>
+                            <li><a href="contacto.jsp">CONTACTO</a></li>
                         </ul>
                     </li>
                 </ul>				
