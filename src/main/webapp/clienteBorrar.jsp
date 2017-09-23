@@ -49,7 +49,8 @@
                     </li>
                     <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon5.png"/></span>Sustentación</a>
                         <ul>
-                            <li><a href="index.jsp">ACERCA DE</a></li>
+                            <li><a href="consultaValor.jsp">Sergio Orozco</a></li>
+                            <li><a href="consultaNivel.jsp">Particular</a></li>
                         </ul>
                     </li>
                     <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon6.png"/></span>Contacto</a>
