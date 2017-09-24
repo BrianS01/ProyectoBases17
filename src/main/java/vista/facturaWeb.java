@@ -9,9 +9,7 @@
  */
 package vista;
 
-
 import java.util.Date;
-
 
 public class facturaWeb 
 {
