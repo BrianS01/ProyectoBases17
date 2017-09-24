@@ -71,9 +71,10 @@
                             <label class="custom-select">
                                 <select>
                                     <option selected="true" disabled="true" >Seleccione Cliente</option>
-                                    <option>Juan</option>
-                                    <option>Mario</option>
-                                    <option>Sergio</option>
+                                    <option>Nombre</option>
+                                    <option>Identificacion</option>
+                                    <option>Direccion</option>
+                                    <option>Telefono</option>
                                 </select>
                             </label>
                         </td>
