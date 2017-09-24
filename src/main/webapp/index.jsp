@@ -35,10 +35,10 @@
                     </li>
                     <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon3.png"/></span>Empleado</a>
                         <ul>
-                            <li><a href="">Crear</a></li>
-                            <li><a href="">Actualizar</a></li>
-                            <li><a href="">Consultar</a></li>
-                            <li><a href="">Borrar</a></li>
+                            <li><a href="empleadoCrear.jsp">Crear</a></li>
+                            <li><a href="empleadoActua.jsp">Actualizar</a></li>
+                            <li><a href="empleadoConsu.jsp">Consultar</a></li>
+                            <li><a href="empleadoBorra.jsp">Borrar</a></li>
                         </ul>
                     </li>
                     <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon4.png"/></span>Factura</a>
