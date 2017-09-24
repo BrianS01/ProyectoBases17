@@ -1,17 +1,95 @@
-<%-- 
-    Document   : empleadoActua
-    Created on : 23/09/2017, 10:12:49 PM
-    Author     : BRIAN
---%>
-
+<!-- 
+ *  PROYECTO PRIMER CORTE
+ *   co-Author :::   Juan Albarracin
+ *   co-Author :::  Mario Bolaños
+ *   co-Author ::: Sergio Orozco
+ *   co-Author :::  Brian Sterling
+ *     Program ::: Bases de Datos
+ *  Credential ::: SIST0008-G01:SIV
+-->
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="shortcut icon" href="ui/imagenes/logo.ico">
+        <link rel="stylesheet" href="ui/css/Desplegable.css">
+        <title>VLC Ltda!</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="MenuDes">
+            <nav>
+                <ul>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon1.png" /></span>Inicio</a>
+                        <ul>
+                            <li><a href="index.jsp">INICIO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon2.png" /> </span>Cliente</a>
+                        <ul>
+                            <li><a href="Cliente.jsp">Crear</a></li>
+                            <li><a href="clienteActua.jsp">Actualizar</a></li>
+                            <li><a href="clienteConsulta.jsp">Consultar</a></li>
+                            <li><a href="clienteBorrar.jsp">Borrar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon3.png" /> </span>Empleado</a>
+                        <ul>
+                            <li><a href="empleadoCrear.jsp">Crear</a></li>
+                            <li><a href="empleadoActua.jsp">Actualizar</a></li>
+                            <li><a href="empleadoConsu.jsp">Consultar</a></li>
+                            <li><a href="empleadoBorra.jsp">Borrar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon4.png"/></span>Factura</a>
+                        <ul>
+                            <li><a href="index.jsp">FACTURA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon5.png"/></span>Sustentación</a>
+                        <ul>
+                            <li><a href="consultaValor.jsp">Sergio Orozco</a></li>
+                            <li><a href="consultaNivel.jsp">Particular</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span class=""><img class="icon" src="ui/imagenes/icon6.png"/></span>Contacto</a>
+                        <ul>
+                            <li><a href="contacto.jsp">CONTACTO</a></li>
+                        </ul>
+                    </li>
+                </ul>				
+            </nav>
+        </div>
+        <form action="ClienteCont"  method="POST">
+            <div class="form-style-5">
+                <form>
+                    <fieldset>
+                        <legend><span class="number"></span>Información Nuevo Cliente</legend>
+                        <td>ID</td><td><input type="text" placeholder="Direccion" name="Direccion" maxlength="28"/>  </td>
+                        <td>        
+                            <label class="custom-select">
+                                <select>
+                                    <option selected="true" disabled="true" >Seleccione Cliente</option>
+                                    <option>Nombre</option>
+                                    <option>Identificacion</option>
+                                    <option>Direccion</option>
+                                    <option>Telefono</option>
+                                </select>
+                            </label>
+                        </td>
+                        <br>
+                        <br>
+                        <td>Nivel</td><td><input type="text" placeholder="Nivel" name="Nivel" maxlength=""/>  </td>
+                    </fieldset>
+                    <button><a href="#">Cambiar</a></button>
+                </form>
+            </div>
+            <footer>
+                <font size="3" color="white">
+                    <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
+                </font>
+            </footer>
+        </form>
     </body>
 </html>
