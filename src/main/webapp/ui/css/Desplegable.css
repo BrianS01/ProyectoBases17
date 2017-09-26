@@ -148,6 +148,8 @@ nav > ul > li > ul
 
 
 
+
+/*Estilo Cuadros*/
 div.form-style-5
 {
     max-width: 500px;
@@ -158,7 +160,6 @@ div.form-style-5
     background: #f4f7f8;
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
-
 }
 
 fieldset
@@ -252,6 +253,7 @@ input[type="submit"]:hover, input[type="button"]:hover
 
 
 
+
  /* Edicion del Select */
 label.custom-select 
 {
@@ -260,7 +262,8 @@ label.custom-select
 
 }
 
-custom-select select {
+custom-select select 
+{
     display: inline-block;
     padding: 4px 3px 3px 5px;
     margin: 0;
@@ -273,7 +276,8 @@ custom-select select {
 }
 
 /* Select arrow styling */
-custom-select:after {
+custom-select:after 
+{
     content: "▼";
     position: absolute;
     top: 0;
@@ -287,6 +291,7 @@ custom-select:after {
     pointer-events: none;
 }
 
-no-pointer-events .custom-select:after {
+no-pointer-events .custom-select:after 
+{
     content: none;
 }
