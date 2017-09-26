@@ -61,6 +61,7 @@
             </nav>
         </div>
         <h1> Shadow Came into the Room </h1>
+        <h2> Paranoid in the Night </h2>
         <footer>
             <font size="3" color="white">
                 <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
