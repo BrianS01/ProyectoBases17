@@ -64,7 +64,12 @@
         <h2> Paranoid in the Night </h2>
         <h3> Pretty sure, that sucks </h3>
         <h4> Hey Stewie , Brian </h4>
-        <h>  </h>
+        <h5>  </h5>
+        <h6>  </h6>
+        <h7>  </h7
+        <h8>  </h8>
+        <h9>  </h9>
+        <h10>  </h10>
         <footer>
             <font size="3" color="white">
                 <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
