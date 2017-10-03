@@ -65,7 +65,7 @@
         <h3> “Don't have a cow, man.” </h3>
         <h4> “I didn't do it!” </h4>
         <h5> “"Nobody better lay a finger on my Butterfinger!"” </h5>
-        <h6>  </h6>
+        <h6> "El Barto" </h6>
         <h7> Abraham Simpson </h7
         <h8> Homer Jay Simpson </h8>
         <h9> Bartholomew JoJo Simpsons </h9>
