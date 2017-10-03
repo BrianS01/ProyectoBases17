@@ -70,6 +70,13 @@
         <h8> Homer Jay Simpson </h8>
         <h9> Bartholomew JoJo Simpsons </h9>
         <h10> Picard Simpson </h10>
+        <div class="contacto">
+
+      <img src="images/3754004820_91a5c238a0.jpg" alt="" />
+      
+      <h2>A Movie in the Park:<br />Kung Fu Panda</h2>
+
+</div>
         <footer>
             <font size="3" color="white">
                 <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
