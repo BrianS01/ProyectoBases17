@@ -69,7 +69,7 @@
         <h7>  </h7
         <h8>  </h8>
         <h9>  </h9>
-        <h10>  </h10>
+        <h10> Picard Simpson </h10>
         <footer>
             <font size="3" color="white">
                 <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
