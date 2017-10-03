@@ -62,8 +62,9 @@
         </div>
         <h1> Shadow Came into the Room </h1>
         <h2> Paranoid in the Night </h2>
-        <h2> Pretty sure, that sucks </h2>
-        <h2> Hey Stewie , Brian </h2>
+        <h3> Pretty sure, that sucks </h3>
+        <h4> Hey Stewie , Brian </h4>
+        <h>  </h>
         <footer>
             <font size="3" color="white">
                 <p>Copyright © 2017 - VLC Ltda - Todos los derechos reservados.</p>
