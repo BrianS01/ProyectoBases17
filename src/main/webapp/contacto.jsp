@@ -62,7 +62,7 @@
         </div>
         <div class="contacto">
             <img src="ui/imagenes/vector-western.png" alt=""/>
-            <h2>A Movie in the Park:<br />Kung Fu Panda</h2>
+            <h2>Los Estudiantes de Bases de Datos<br />2017-III</h2>
         </div>
         <footer>
             <font size="3" color="white">
