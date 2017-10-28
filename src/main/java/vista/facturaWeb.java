@@ -68,4 +68,10 @@ public class facturaWeb
     {
         this.fecha = fecha;
     }
+
+    @Override
+    public String toString() {
+        return "facturaWeb{" + "fecha=" + fecha + '}';
+    }
+    
 }
